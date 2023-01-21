@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><script type="text/javascript" src="igl_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="igl_files/wombat.js" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://users.volja.net:80/wesley/igl.html","20060506001910","https://web.archive.org/","web","/_static/",
+	      "1146874750");
+</script>
+<link rel="stylesheet" type="text/css" href="igl_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="igl_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="description" content="bleu homepage">
+    <meta name="keywords" content="electropaint, electro-paint, IGL, muzak, OpenGL, IrisGL, IRIX, SGI, ep">
+    <meta name="author" content="wes">
+    <link href="igl_files/style.css" rel="stylesheet" type="text/css">
+    <title>bleu - IGL</title>
+<style id="abu-collapse-styles" type="text/css"></style></head>
+
+
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" style="display: block; direction: ltr;" lang="en">
+</div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20060506001910/http://users.volja.net:80/wesley/igl.html</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(700,27,25,2,"web","http://users.volja.net/wesley/igl.html","20060506001910",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+    <script type="text/javascript">
+    function
+    winopen(iname)
+    {
+        var url = "show_image.html#" + iname;
+
+        window.open (url, "", "toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=640,height=503", false);
+    }
+    </script>
+
+
+    <table>
+        <!-- title -->
+        <tbody><tr><td></td><td><h1>bleu - IGL</h1></td></tr>
+
+        <tr>
+            <!-- menu -->
+            <td class="menu">
+                <a class="menu" href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/index.html" title="main page">home</a>
+                <a class="menu" href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/muzak.html" title="aural pleasures">muzak</a>
+                <a class="menudisabled" title="IGL is a port of IrisGL to OpenGL. in Win32 or X11 flavour">IGL</a>
+                <a class="menu" href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/links.html" title="links">links</a>
+                <a class="image" href="https://web.archive.org/web/20060506001910/http://demo.ffii.org/"><img src="igl_files/bsod7_88x31.en.gif" alt="Brussels Demonstration against Software Patents 17th February" border="0"></a>
+            </td>
+
+            <!-- contents -->
+            <td class="contents">
+                <h2>about IGL</h2>
+                <p>
+                    IGL is an Open Source port of IrisGL library to OpenGL.<br>
+                    Current version is 0.1.8 which incorporates both Win32 and X11
+                    implementations.
+                </p>
+
+                <h2>IGL history</h2>
+                <h3>i. electro-paint</h3>
+                <p>
+                    first, there was electro-paint, an <a target="_blank" href="https://web.archive.org/web/20060506001910/http://www.sgi.com/">SGI</a> Irix screensaver
+                    written by <a target="_blank" href="https://web.archive.org/web/20060506001910/http://www.tristram.com/">David A. Tristram</a>.
+                    the screensaver was simple at its base - triangles or squares moving around on the screen -
+                    but so effective that the crowd rejoiced.<br>
+                    everyone wanted the sources, but SGI never released them (or did they?). everyone
+                    wanted to get to know the algorithms used for polygon movement, but it came down
+                    to guessing (polar coordinates etc.).<br>
+                    then, a programmer (me) was enlightened, and the sources were resurrected. electro-paint
+                    was posted to newsgroups by David A. Tristram himself, while still working with NASA.
+                    it was however disguised as a part of the (in)famous Panel Library and - thanks to Google
+                    Groups - the whole package could be downloaded. thanks to <a target="_blank" href="https://web.archive.org/web/20060506001910/http://www.tristram.com/">
+                    David A. Tristram</a>, the Panel Library and Electropaint sources were made a part of IGL
+                    distribution (as of version 0.1.7).
+                </p>
+
+                <h3>ii. first steps</h3>
+                <p>
+                    initially, i took the electro-paint sources and "converted" them to OpenGL. but since
+                    IrisGL includes window management functions, it didn't make my job any easier. the panel
+                    library also includes a concept of connectable and scriptable sliders and yes, electro-paint
+                    uses them extensively as well. plus the source code almost didn't include any comments, so
+                    there you go.
+                </p>
+
+                <h3>iii. i will write me a wrapper</h3>
+                <p>
+                    yes, it sounds simple. just take an IrisGL function call and convert it to OpenGL. well,
+                    IrisGL contains around 500-600 API calls (just my guess) and they include OpenGL, window
+                    management + menus, device (mouse, keyboard) queueing etc. plus it adds to OpenGL
+                    functionality (editable display lists, callbacks within display lists, concave
+                    polygons etc.). it wasn't easy, so some things aren't supported and some will never be.<br>
+                    i created an account on <a target="_blank" href="https://web.archive.org/web/20060506001910/http://sourceforge.net/">sourceforge</a>, but due to
+                    the complex process of releasing/managing projects etc., i think i've given up for now.
+                    (can someone explain what the hell happened to CVS? it's supposed to be simple dammit!)
+                </p>
+
+
+                <h3>iv. it compiles!</h3>
+                <p>
+                    weeks later a functional version was made that could run electro-paint quite well.
+                    some known bugs are still present and very likely a lot of unknown ones. also the
+                    Panel Library relies quite heavily on IrisGL device queueing and there may be a
+                    bug in my code or the library itself (unlikely). i'm still awaiting my SGI machine,
+                    so i may closely examine how everything works there.
+                </p>
+
+                <h3>v. experiments</h3>
+                <p>
+                    before i found out about ep sources, the idea of swirling squares got to me,
+                    so i wrote a couple of screensavers as an homage to the master. the code can
+                    be found in the downloads section, but beware as it contains some bad coding
+                    practices and it's a mess in general, since it contains multiple experiments
+                    bundled in one source. called GLectric, it features some really primitive math
+                    experiments (as i'm not too good in math), interaction with mouse (rotate, move - 
+                    see the code) and fake motion blur, cleverly disguised as "clear color buffer"(TM).<br>
+                    i also recently developed a WinAMP plugin called "Sonik Maschine" that uses electro-paint
+                    algorithm framework (but not the Panel Library) while fueling on juicy muzak (see the
+                    'muzak' section). it's in the alpha stage. for help, press F1.
+                </p>
+
+                <h3>downloads</h3>
+                <p>
+                    Panel Library and Electropaint sources are now a part of IGL distribution. David was
+                    really kind and allowed me to do this, so i hope everyone appreciates it as much as i do.
+                    however, Electropaint is now a trademark, so here's a disclaimer:<br>
+                    Panel Library/Electropaint Copyright (c) 1986 David A. Tristram. Electropaint (TM) is a
+                    Registered U.S. Trademark of Tristram Visual. Tristram Visual can be contacted at
+                    <a target="_blank" href="https://web.archive.org/web/20060506001910/http://www.tristram.com/">www.tristram.com.</a>
+                </p>
+                <ul>
+                    <li><a href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/igl/igl_0.1.8.zip">IGL 0.1.8</a> (source code, ZIP archive) editable display lists + X11 menus added
+                    </li><li><a href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/igl/igl_0.1.7.zip">IGL 0.1.7</a> (source code, ZIP archive) IGL now contains Panel Library + ep
+                    </li><li><a href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/igl/igl_0.1.6.zip">IGL 0.1.6</a> (source code, ZIP archive) initial release
+                    </li><li>my post on electro-paint sources can be found <a target="_blank" href="https://web.archive.org/web/20060506001910/http://groups.google.com/groups?q=electropaint&amp;hl=en&amp;lr=&amp;ie=UTF-8&amp;oe=UTF-8&amp;selm=cce5994f.0205300106.1f962f3a%40posting.google.com&amp;rnum=3">here</a>.
+                    </li><li><a href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/igl/glectric_0.1.zip">GLectric 0.1</a> (Win32 source + binary).
+                    </li><li>WinAMP plugin (Win32 binaries)- <a href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/igl/sonik_0.1.zip">'normal'</a> and
+                        <a href="https://web.archive.org/web/20060506001910/http://users.volja.net/wesley/igl/sonik_0.1_IRIS_GT.zip">IRIS_GT</a> version.
+                </li></ul>
+
+                <h3>screenshots</h3>
+                <table align="center">
+                    <tbody><tr>
+                        <td class="image"><a class="image" href="javascript:winopen('ep_win32.jpg')"><img class="image" src="igl_files/ep_win32_small.jpg" alt="first steps"></a></td>
+                        <td class="image"><a class="image" href="javascript:winopen('ep.jpg')"><img class="image" src="igl_files/ep_small.jpg" alt="electro-paint in action"></a></td>
+                        <td class="image"><a class="image" href="javascript:winopen('ep_irisgt.jpg')"><img class="image" src="igl_files/ep_irisgt_small.jpg" alt="electro-paint IRIS_GT style"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="image">first steps</td>
+                        <td class="image">electro-paint in action!</td>
+                        <td class="image">electro-paint IRIS_GT style</td>
+                    </tr>
+
+                    <tr>
+                        <td class="image"><a class="image" href="javascript:winopen('ep_x11.jpg')"><img class="image" src="igl_files/ep_x11_small.jpg" alt="electro-paint on X11"></a></td>
+                        <td class="image"><a class="image" href="javascript:winopen('winamp.jpg')"><img class="image" src="igl_files/winamp_small.jpg" alt="Sonik Maschine - WinAMP plugin"></a></td>
+                        <td class="image"><a class="image" href="javascript:winopen('glectric1.jpg')"><img class="image" src="igl_files/glectric1_small.jpg" alt="GLectric"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="image">electro-paint on X11</td>
+                        <td class="image">Sonik Maschine - WinAMP plugin</td>
+                        <td class="image">GLectric</td>
+                    </tr>
+                </tbody></table>
+
+                <h2>FAQ</h2>
+                <p>actually this section just contains facts.</p>
+
+                <h3>i. electro-paint</h3>
+                <ul>
+                    <li>original version used triangles, not squares.
+                    </li><li>it comes in two flavours, screensaver and interactive ("ep -c")
+                    </li><li>the algorithm used for movement is both simple and complex.
+                    </li><li>i'm not 100% sure, but it doesn't seem to use polar coordinates.
+                    </li><li>algorithm for movement relies upon a set of sliders which control the
+                        whole thing. these include "twist", "zoom", "arm", "wheel" etc. some
+                        of the sliders control the general movement, some just the polygon that's
+                        being processed.
+                    </li><li>Panel Library provides scripting functionality, meaning that state
+                        of the sliders, buttons etc. can be dumped to a file and re-used.
+                        without scripting, the screensaver mode of electro-paint would not be
+                        a moving.
+                    </li><li>there are a few versions of electro-paint available. to my knowledge, source
+                        code is available for early versions only. each Irix version seems to bring
+                        something different to it.
+                    </li><li>first version uses colormaps, the next (IRIS_GT) uses lighting,
+                        alpha-blending, additional sliders and RGB mode.
+                </li></ul>
+
+                <h3>ii. IGL</h3>
+                <ul>
+                    <li>this section is no longer needed. documentation is now a part of the distribution.
+                </li></ul>
+
+
+                <h2>limitations and bugs</h2>
+                <h3>i. limitations</h3>
+                <ul>
+                    <li>IGL has no internal multithreading support (does it need one?)
+                    </li><li>drawmode() isn't implemented yet
+                    </li><li>due to Win32 OpenGL limitations, SetPixelFormat() can only be set once
+                        and thus we can't use acplanes()/stenplanes() etc. properly. (it doesn't
+                        seem to work even if the window is recreated!)
+                    </li><li>color map support is emulated through RGB
+                    </li><li>font configuration is hardcoded
+                    </li><li>a lot of obscure functions like blink(), cyclemap() etc. are not implemented (and
+                        may never be)
+                    </li><li>IGL doesn't emulate IrisGL for different IRIX systems (IRIS_NEWS, IRIS_GT,
+                        IRIS_4D), as i don't actually know how they behave
+                    </li><li>IGL eats about 25-40% of my CPU. it most probably shouldn't.
+                    </li><li>see docs/bugs.txt for more information.
+                </li></ul>
+
+                <h3>ii. bugs</h3>
+                <ul>
+                    <li>Panel Library: windows flicker/aren't properly redrawn (especially IRIS_GT)
+                    </li><li>see docs/bugs.txt for more information.
+                </li></ul>
+
+                <h3>IGL future</h3>
+                <p>Here's a list of things to expect in future versions (by priority):</p>
+                <ul>
+                    <li>better font support
+                    </li><li>drawmode () - might be impossible on PC hardware
+                    </li><li>feedback buffer
+                    </li><li>object picking
+                    </li><li>unimplemented API
+                    </li><li>Win32/X11 defaults should be adjusted to IrisGL ones.
+                    </li><li>device queue and QFULL
+                    </li><li>emulating different IRIX systems (not probable)
+                </li></ul>
+            </td>
+        </tr>
+
+
+    </tbody></table>
+<script type="text/javascript">
+<!--
+var r = Math.random();
+var t = new Date();
+document.write("<img width='1' height='1' src='https://web.archive.org/web/20060506001910/http://moss.aragon.si/nc/px.gif?site=volja&t=" + t.getTime() + ";r=" + r + "'>");
+// -->
+</script><img src="igl_files/px.html" width="1" height="1">
+<noscript>
+<img width="1" height="1" src="https://web.archive.org/web/20060506001910im_/http://moss.aragon.si/nc/px.gif?site=volja&amp;js=0">
+</noscript>
+
+
+
+
+
+
+
+</body></html>
+<!--
+     FILE ARCHIVED ON 00:19:10 May 06, 2006 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 10:56:44 Jan 21, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 252.998
+  exclusion.robots: 0.179
+  exclusion.robots.policy: 0.171
+  cdx.remote: 0.059
+  esindex: 0.01
+  LoadShardBlock: 211.626 (3)
+  PetaboxLoader3.datanode: 76.091 (4)
+  CDXLines.iter: 20.504 (3)
+  load_resource: 122.988
+  PetaboxLoader3.resolve: 74.806
+-->
